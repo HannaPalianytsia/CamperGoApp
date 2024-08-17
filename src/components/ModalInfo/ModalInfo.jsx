@@ -1,8 +1,8 @@
-import styles from "./ModalInfo.module.css";
-import icons from "../../assets/icons.svg";
-import ModalReviews from "../ModalReviews/ModalReviews";
-import ModalFeatures from "../ModalFeatures/ModalFeatures";
-import clsx from "clsx";
+import styles from './ModalInfo.module.css';
+import icons from '../../assets/icons.svg';
+import ModalReviews from '../ModalReviews/ModalReviews';
+import ModalFeatures from '../ModalFeatures/ModalFeatures';
+import clsx from 'clsx';
 
 const ModalInfo = ({
   advert: { name, price, rating, location, description, gallery, reviews },
@@ -29,13 +29,9 @@ const ModalInfo = ({
         </div>
         <p className={styles.price}>&#8364;{price}.00</p>
         <ul className={styles.imageGallery}>
-          {gallery.map((image) => (
+          {gallery.map(image => (
             <li key={image}>
-              <img
-                src={image}
-                alt={`${name} photo`}
-                className={styles.camperImg}
-              />
+              <img src={image} alt={name} className={styles.camperImg} />
             </li>
           ))}
         </ul>
