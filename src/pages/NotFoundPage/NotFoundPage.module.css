@@ -1,0 +1,19 @@
+.notFoundPage {
+  padding: 24px;
+  width: 888px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notFound {
+  font-weight: 600;
+  font-size: 24px;
+}
+.goHome {
+  text-decoration: underline;
+}
+.goHome:hover,
+.goHome:focus {
+  color: #e44848;
+}

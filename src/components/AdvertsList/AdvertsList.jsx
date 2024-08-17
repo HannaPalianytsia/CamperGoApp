@@ -4,7 +4,6 @@ import {
   selectAdverts,
   selectIsAllAdvertsLoaded,
 } from '../../redux/adverts/selectors';
-// import { adverts } from './adverts';
 import styles from './AdvertsList.module.css';
 
 const AdvertsList = ({ handleLoadMoreClick }) => {

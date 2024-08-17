@@ -1,14 +1,16 @@
-import { NavLink } from "react-router-dom";
-import styles from "./NotFoundPage.module.css";
+import { NavLink } from 'react-router-dom';
+import styles from './NotFoundPage.module.css';
 
-// зробити setInterval (setTimeout) і перенаправити на home page
 const NotFoundPage = () => {
   return (
     <div className={styles.notFoundPage}>
       <p className={styles.notFound}>This page not found</p>
-      <NavLink to="/" className={styles.goHome}>
-        Go to home page
-      </NavLink>
+      <p className={styles.notFound}>
+        Go to{' '}
+        <NavLink to="/" className={styles.goHome}>
+          home page
+        </NavLink>
+      </p>
     </div>
   );
 };

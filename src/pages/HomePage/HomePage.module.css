@@ -1,0 +1,24 @@
+.homePage {
+  padding: 24px;
+  width: 888px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.homePageText {
+  font-weight: 600;
+  font-size: 24px;
+}
+.goCatalog {
+  text-decoration: underline;
+}
+.goCatalog:hover,
+.goCatalog:focus {
+  color: #e44848;
+}
+.homePageImg {
+  width: 600px;
+  object-fit: cover;
+}
