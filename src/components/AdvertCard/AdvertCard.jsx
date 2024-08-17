@@ -65,9 +65,9 @@ const AdvertCard = ({ advert }) => {
             <li className={clsx(styles.amenity, styles.capitalize)}>
               {engine}
             </li>
-            {kitchen && <li className={styles.amenity}>Kitchen</li>}
+            {kitchen > 0 && <li className={styles.amenity}>Kitchen</li>}
             <li className={styles.amenity}>{beds} beds</li>
-            {airConditioner && <li className={styles.amenity}>AC</li>}
+            {airConditioner > 0 && <li className={styles.amenity}>AC</li>}
           </ul>
           <button type="button" onClick={openModal}>
             Show more

@@ -25,17 +25,17 @@ const ModalFeatures = ({ advert }) => {
         {airConditioner && (
           <li className={styles.amenity}>{airConditioner} Air conditioner</li>
         )}
-        {bathroom && <li className={styles.amenity}>Bathroom</li>}
-        {kitchen && <li className={styles.amenity}>Kitchen</li>}
-        {beds && <li className={styles.amenity}>{beds} beds</li>}
-        {TV && <li className={styles.amenity}>TV</li>}
-        {CD && <li className={styles.amenity}>CD</li>}
-        {radio && <li className={styles.amenity}>Radio</li>}
-        {shower && <li className={styles.amenity}>Shower</li>}
-        {toilet && <li className={styles.amenity}>Toilet</li>}
-        {freezer && <li className={styles.amenity}>Freezer</li>}
-        {hob && <li className={styles.amenity}>{hob} hob</li>}
-        {microwave && <li className={styles.amenity}>Microwave</li>}
+        {bathroom > 0 && <li className={styles.amenity}>Bathroom</li>}
+        {kitchen > 0 && <li className={styles.amenity}>Kitchen</li>}
+        {beds > 0 && <li className={styles.amenity}>{beds} beds</li>}
+        {TV > 0 && <li className={styles.amenity}>TV</li>}
+        {CD > 0 && <li className={styles.amenity}>CD</li>}
+        {radio > 0 && <li className={styles.amenity}>Radio</li>}
+        {shower > 0 && <li className={styles.amenity}>Shower</li>}
+        {toilet > 0 && <li className={styles.amenity}>Toilet</li>}
+        {freezer > 0 && <li className={styles.amenity}>Freezer</li>}
+        {hob > 0 && <li className={styles.amenity}>{hob} hob</li>}
+        {microwave > 0 && <li className={styles.amenity}>Microwave</li>}
         {gas && <li className={styles.amenity}>Gas</li>}
         {water && <li className={styles.amenity}>Water</li>}
       </ul>
