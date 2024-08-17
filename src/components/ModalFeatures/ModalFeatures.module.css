@@ -1,0 +1,40 @@
+.features {
+  width: 430px;
+}
+.amenitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 44px;
+}
+.amenity {
+  border-radius: 100px;
+  padding: 12px 18px;
+  background: #f2f4f7;
+  mix-blend-mode: multiply;
+}
+.vehicleDetailsTitle {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-bottom: 24px;
+}
+.vehicleDetailsTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 1px;
+  background-color: rgba(16, 24, 40, 0.1);
+  width: 100%;
+}
+.vehicleDetailsList {
+  padding-top: 24px;
+}
+.vehicleDetailsItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 1.33333;
+  margin-bottom: 14px;
+}

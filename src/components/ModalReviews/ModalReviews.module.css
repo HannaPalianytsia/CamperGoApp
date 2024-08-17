@@ -1,0 +1,30 @@
+.reviews {
+  width: 430px;
+}
+.reviewer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.picture {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background: #f2f4f7;
+  font-weight: 600;
+  font-size: 24px;
+  color: #e44848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 3px;
+}
+.comment {
+  color: #475467;
+  margin-bottom: 24px;
+}

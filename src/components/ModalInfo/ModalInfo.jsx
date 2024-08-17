@@ -3,10 +3,18 @@ import icons from '../../assets/icons.svg';
 import ModalReviews from '../ModalReviews/ModalReviews';
 import ModalFeatures from '../ModalFeatures/ModalFeatures';
 import clsx from 'clsx';
+import ModalForm from 'components/ModalForm/ModalForm';
+import { useState } from 'react';
 
-const ModalInfo = ({
-  advert: { name, price, rating, location, description, gallery, reviews },
-}) => {
+const ModalInfo = ({ advert }) => {
+  const [isFeaturesOpen, setIsFeaturesOpen] = useState(true);
+
+  const { name, price, rating, location, description, gallery, reviews } =
+    advert;
+
+  const handleFeaturesClick = () => setIsFeaturesOpen(true);
+  const handleReviewsClick = () => setIsFeaturesOpen(false);
+
   return (
     <div className={styles.modalContent}>
       <div>
@@ -41,19 +49,35 @@ const ModalInfo = ({
         <div className={styles.btnContainer}>
           <button
             type="button"
-            className={clsx(styles.infoBtn, styles.selectedInfo)}
+            className={clsx(
+              styles.infoBtn,
+              isFeaturesOpen && styles.selectedInfo
+            )}
+            onClick={handleFeaturesClick}
+            disabled={isFeaturesOpen}
           >
             Features
           </button>
           <button
             type="button"
-            className={clsx(styles.infoBtn, styles.selectedInfo)}
+            className={clsx(
+              styles.infoBtn,
+              !isFeaturesOpen && styles.selectedInfo
+            )}
+            onClick={handleReviewsClick}
+            disabled={!isFeaturesOpen}
           >
             Reviews
           </button>
         </div>
-        <ModalReviews />
-        <ModalFeatures />
+        <div className={styles.detaisAndForm}>
+          {isFeaturesOpen ? (
+            <ModalFeatures advert={advert} />
+          ) : (
+            <ModalReviews reviews={reviews} />
+          )}
+          <ModalForm />
+        </div>
       </div>
     </div>
   );
