@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/CamperGoiiiiiiiiiii/static/css/main.ba542d50.css",
-    "main.js": "/CamperGoiiiiiiiiiii/static/js/main.67827a13.js",
-    "index.html": "/CamperGoiiiiiiiiiii/index.html",
-    "main.ba542d50.css.map": "/CamperGoiiiiiiiiiii/static/css/main.ba542d50.css.map",
-    "main.67827a13.js.map": "/CamperGoiiiiiiiiiii/static/js/main.67827a13.js.map"
+    "main.css": "/CamperGoApp/static/css/main.ba542d50.css",
+    "main.js": "/CamperGoApp/static/js/main.67827a13.js",
+    "index.html": "/CamperGoApp/index.html",
+    "main.ba542d50.css.map": "/CamperGoApp/static/css/main.ba542d50.css.map",
+    "main.67827a13.js.map": "/CamperGoApp/static/js/main.67827a13.js.map"
   },
   "entrypoints": [
     "static/css/main.ba542d50.css",
