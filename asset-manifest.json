@@ -1,13 +1,27 @@
 {
   "files": {
-    "main.css": "/CamperGoApp/static/css/main.ba542d50.css",
-    "main.js": "/CamperGoApp/static/js/main.67827a13.js",
+    "main.css": "/CamperGoApp/static/css/main.6d73203a.css",
+    "main.js": "/CamperGoApp/static/js/main.82dc2287.js",
+    "static/js/680.54d9a95f.chunk.js": "/CamperGoApp/static/js/680.54d9a95f.chunk.js",
+    "static/css/858.a8c8e27e.chunk.css": "/CamperGoApp/static/css/858.a8c8e27e.chunk.css",
+    "static/js/858.2fb219a2.chunk.js": "/CamperGoApp/static/js/858.2fb219a2.chunk.js",
+    "static/js/413.1871a487.chunk.js": "/CamperGoApp/static/js/413.1871a487.chunk.js",
+    "static/css/154.31d6cfe0.chunk.css": "/CamperGoApp/static/css/154.31d6cfe0.chunk.css",
+    "static/js/154.fdf8a046.chunk.js": "/CamperGoApp/static/js/154.fdf8a046.chunk.js",
+    "static/js/948.19bc98ce.chunk.js": "/CamperGoApp/static/js/948.19bc98ce.chunk.js",
+    "static/media/icons.svg": "/CamperGoApp/static/media/icons.0136a9989fc782410d59036aae482944.svg",
     "index.html": "/CamperGoApp/index.html",
-    "main.ba542d50.css.map": "/CamperGoApp/static/css/main.ba542d50.css.map",
-    "main.67827a13.js.map": "/CamperGoApp/static/js/main.67827a13.js.map"
+    "main.6d73203a.css.map": "/CamperGoApp/static/css/main.6d73203a.css.map",
+    "main.82dc2287.js.map": "/CamperGoApp/static/js/main.82dc2287.js.map",
+    "680.54d9a95f.chunk.js.map": "/CamperGoApp/static/js/680.54d9a95f.chunk.js.map",
+    "858.a8c8e27e.chunk.css.map": "/CamperGoApp/static/css/858.a8c8e27e.chunk.css.map",
+    "858.2fb219a2.chunk.js.map": "/CamperGoApp/static/js/858.2fb219a2.chunk.js.map",
+    "413.1871a487.chunk.js.map": "/CamperGoApp/static/js/413.1871a487.chunk.js.map",
+    "154.fdf8a046.chunk.js.map": "/CamperGoApp/static/js/154.fdf8a046.chunk.js.map",
+    "948.19bc98ce.chunk.js.map": "/CamperGoApp/static/js/948.19bc98ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba542d50.css",
-    "static/js/main.67827a13.js"
+    "static/css/main.6d73203a.css",
+    "static/js/main.82dc2287.js"
   ]
 }
