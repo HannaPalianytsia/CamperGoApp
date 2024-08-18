@@ -9,7 +9,7 @@ import {
   removeFromFavorites,
 } from 'utils/favorites';
 
-const AdvertCard = ({ advert }) => {
+const AdvertCard = ({ advert, isFavoritePage }) => {
   const favorites = getFavorites();
 
   const [isFavorite, setIsFavorite] = useState(() => {
@@ -52,21 +52,23 @@ const AdvertCard = ({ advert }) => {
             <h3 className={styles.name}>{name}</h3>
             <div className={styles.likeContainer}>
               <p className={styles.price}>&#8364;{price}.00</p>
-              <button
-                type="button"
-                onClick={handleLikeBtnClick}
-                className={styles.likeBtn}
-              >
-                {isFavorite ? (
-                  <svg width={24} height={24} fill="#e44848">
-                    <use href={`${icons}#heart`}></use>
-                  </svg>
-                ) : (
-                  <svg width={24} height={24} fill="none" stroke="#101828">
-                    <use href={`${icons}#heart`}></use>
-                  </svg>
-                )}
-              </button>
+              {!isFavoritePage && (
+                <button
+                  type="button"
+                  onClick={handleLikeBtnClick}
+                  className={styles.likeBtn}
+                >
+                  {isFavorite ? (
+                    <svg width={24} height={24} fill="#e44848">
+                      <use href={`${icons}#heart`}></use>
+                    </svg>
+                  ) : (
+                    <svg width={24} height={24} fill="none" stroke="#101828">
+                      <use href={`${icons}#heart`}></use>
+                    </svg>
+                  )}
+                </button>
+              )}
             </div>
           </div>
           <div className={styles.camperAddInfo}>

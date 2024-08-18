@@ -23,7 +23,7 @@ const FavoritesPage = () => {
         <ul className={styles.advertsList}>
           {favorites.map(advert => (
             <li key={advert._id}>
-              <AdvertCard advert={advert} />
+              <AdvertCard advert={advert} isFavoritePage={true} />
             </li>
           ))}
         </ul>
