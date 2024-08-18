@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CamperGoApp/static/css/main.9d013ca6.css",
-    "main.js": "/CamperGoApp/static/js/main.16f3d1b7.js",
+    "main.js": "/CamperGoApp/static/js/main.d6e1df81.js",
     "static/css/674.a45cb30b.chunk.css": "/CamperGoApp/static/css/674.a45cb30b.chunk.css",
     "static/js/674.a4ac4f28.chunk.js": "/CamperGoApp/static/js/674.a4ac4f28.chunk.js",
     "static/css/201.f1942c2d.chunk.css": "/CamperGoApp/static/css/201.f1942c2d.chunk.css",
@@ -11,11 +11,11 @@
     "static/css/154.8ec8537a.chunk.css": "/CamperGoApp/static/css/154.8ec8537a.chunk.css",
     "static/js/154.e23d29ed.chunk.js": "/CamperGoApp/static/js/154.e23d29ed.chunk.js",
     "static/js/464.b7fb015b.chunk.js": "/CamperGoApp/static/js/464.b7fb015b.chunk.js",
-    "static/js/327.0027c7e1.chunk.js": "/CamperGoApp/static/js/327.0027c7e1.chunk.js",
+    "static/js/327.5eda7411.chunk.js": "/CamperGoApp/static/js/327.5eda7411.chunk.js",
     "static/media/icons.svg": "/CamperGoApp/static/media/icons.0136a9989fc782410d59036aae482944.svg",
     "index.html": "/CamperGoApp/index.html",
     "main.9d013ca6.css.map": "/CamperGoApp/static/css/main.9d013ca6.css.map",
-    "main.16f3d1b7.js.map": "/CamperGoApp/static/js/main.16f3d1b7.js.map",
+    "main.d6e1df81.js.map": "/CamperGoApp/static/js/main.d6e1df81.js.map",
     "674.a45cb30b.chunk.css.map": "/CamperGoApp/static/css/674.a45cb30b.chunk.css.map",
     "674.a4ac4f28.chunk.js.map": "/CamperGoApp/static/js/674.a4ac4f28.chunk.js.map",
     "201.f1942c2d.chunk.css.map": "/CamperGoApp/static/css/201.f1942c2d.chunk.css.map",
@@ -25,10 +25,10 @@
     "154.8ec8537a.chunk.css.map": "/CamperGoApp/static/css/154.8ec8537a.chunk.css.map",
     "154.e23d29ed.chunk.js.map": "/CamperGoApp/static/js/154.e23d29ed.chunk.js.map",
     "464.b7fb015b.chunk.js.map": "/CamperGoApp/static/js/464.b7fb015b.chunk.js.map",
-    "327.0027c7e1.chunk.js.map": "/CamperGoApp/static/js/327.0027c7e1.chunk.js.map"
+    "327.5eda7411.chunk.js.map": "/CamperGoApp/static/js/327.5eda7411.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d013ca6.css",
-    "static/js/main.16f3d1b7.js"
+    "static/js/main.d6e1df81.js"
   ]
 }
