@@ -2,16 +2,13 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import styles from './ModalForm.module.css';
+import clsx from 'clsx';
 
 const ModalForm = () => {
-  const dateSchema =
-    /^(\d|0\d|[12]\d|3[01]).(0\d|1[012]).(202[456789]|20[3]\d)$/;
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(),
     email: Yup.string().email().required(),
-    date: Yup.string()
-      .matches(dateSchema, 'Please enter real date in format DD.MM.YYYY')
-      .required(),
+    date: Yup.string().required(),
   });
 
   const {
@@ -22,9 +19,7 @@ const ModalForm = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const submitForm = () => {
-    document.location.reload();
-  };
+  const submitForm = () => document.location.reload();
 
   return (
     <form onSubmit={handleSubmit(submitForm)}>
@@ -59,10 +54,10 @@ const ModalForm = () => {
         </div>
         <div className={styles.inputWithDanger}>
           <input
-            type="text"
+            type="date"
             name="date"
             {...register('date')}
-            className={styles.input}
+            className={clsx(styles.input, styles.dateInput)}
             placeholder="Booking date"
           />
           <small className={styles.textDanger}>
