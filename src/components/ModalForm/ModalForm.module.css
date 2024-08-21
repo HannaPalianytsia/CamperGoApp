@@ -31,6 +31,15 @@
   font-size: 16px;
   line-height: 1.25;
 }
+.calendarContainer {
+  position: relative;
+}
+.calendarIcon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+}
 .textDanger {
   color: #e44848;
   position: absolute;
@@ -52,6 +61,8 @@
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+  color: #101828;
 }
 .sendBtn {
   padding: 16px 60px;
