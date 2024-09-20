@@ -1,43 +1,75 @@
 import styles from './ModalFeatures.module.css';
+import icons from '../../assets/icons.svg';
 
 const ModalFeatures = ({ advert }) => {
-  const {
-    airConditioner,
-    bathroom,
-    kitchen,
-    beds,
-    TV,
-    CD,
-    radio,
-    shower,
-    toilet,
-    freezer,
-    hob,
-    microwave,
-    gas,
-    water,
-  } = advert.details;
+  const { airConditioner, bathroom, kitchen, TV, CD, radio, shower, water } =
+    advert.details;
   const { form, length, width, height, tank, consumption } = advert;
 
   return (
     <div className={styles.features}>
       <ul className={styles.amenitiesList}>
         {airConditioner && (
-          <li className={styles.amenity}>{airConditioner} Air conditioner</li>
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#airConditioner`}></use>
+            </svg>
+            <p>{airConditioner} Air conditioner</p>
+          </li>
         )}
-        {bathroom > 0 && <li className={styles.amenity}>Bathroom</li>}
-        {kitchen > 0 && <li className={styles.amenity}>Kitchen</li>}
-        {beds > 0 && <li className={styles.amenity}>{beds} beds</li>}
-        {TV > 0 && <li className={styles.amenity}>TV</li>}
-        {CD > 0 && <li className={styles.amenity}>CD</li>}
-        {radio > 0 && <li className={styles.amenity}>Radio</li>}
-        {shower > 0 && <li className={styles.amenity}>Shower</li>}
-        {toilet > 0 && <li className={styles.amenity}>Toilet</li>}
-        {freezer > 0 && <li className={styles.amenity}>Freezer</li>}
-        {hob > 0 && <li className={styles.amenity}>{hob} hob</li>}
-        {microwave > 0 && <li className={styles.amenity}>Microwave</li>}
-        {gas && <li className={styles.amenity}>Gas</li>}
-        {water && <li className={styles.amenity}>Water</li>}
+        {bathroom > 0 && (
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#water`}></use>
+            </svg>
+            <p>Bathroom</p>
+          </li>
+        )}
+        {kitchen > 0 && (
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#kitchen`}></use>
+            </svg>
+            <p>Kitchen</p>
+          </li>
+        )}
+        {TV > 0 && (
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#tv`}></use>
+            </svg>
+            <p>TV</p>
+          </li>
+        )}
+        {CD > 0 && (
+          <li className={styles.amenity}>
+            <p>CD</p>
+          </li>
+        )}
+        {radio > 0 && (
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#radio`}></use>
+            </svg>
+            <p>Radio</p>
+          </li>
+        )}
+        {shower > 0 && (
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#water`}></use>
+            </svg>
+            <p>Shower</p>
+          </li>
+        )}
+        {water && (
+          <li className={styles.amenity}>
+            <svg width={20} height={20}>
+              <use href={`${icons}#water`}></use>
+            </svg>
+            <p>Water</p>
+          </li>
+        )}
       </ul>
       <div className={styles.vehicleDetails}>
         <h5 className={styles.vehicleDetailsTitle}>Vehicle details</h5>

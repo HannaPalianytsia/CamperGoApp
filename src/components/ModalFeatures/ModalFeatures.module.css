@@ -8,6 +8,8 @@
   margin-bottom: 44px;
 }
 .amenity {
+  display: flex;
+  gap: 8px;
   border-radius: 100px;
   padding: 12px 18px;
   background: #f2f4f7;

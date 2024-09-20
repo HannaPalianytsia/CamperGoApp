@@ -26,7 +26,7 @@ const AdvertCard = ({ advert, isFavoritePage }) => {
     engine,
     transmission,
     description,
-    details: { airConditioner, kitchen, beds },
+    details: { airConditioner, kitchen },
     gallery,
     reviews,
   } = advert;
@@ -95,16 +95,40 @@ const AdvertCard = ({ advert, isFavoritePage }) => {
           </div>
           <p className={styles.description}>{description}</p>
           <ul className={styles.amenitiesList}>
-            <li className={styles.amenity}>{adults} adults</li>
-            <li className={clsx(styles.amenity, styles.capitalize)}>
-              {transmission}
+            <li className={styles.amenity}>
+              <svg width={20} height={20}>
+                <use href={`${icons}#adults`}></use>
+              </svg>
+              <p>{adults} adults</p>
             </li>
             <li className={clsx(styles.amenity, styles.capitalize)}>
-              {engine}
+              <svg width={20} height={20}>
+                <use href={`${icons}#transmission`}></use>
+              </svg>
+              <p>{transmission}</p>
             </li>
-            {kitchen > 0 && <li className={styles.amenity}>Kitchen</li>}
-            <li className={styles.amenity}>{beds} beds</li>
-            {airConditioner > 0 && <li className={styles.amenity}>AC</li>}
+            <li className={clsx(styles.amenity, styles.capitalize)}>
+              <svg width={20} height={20}>
+                <use href={`${icons}#engine`}></use>
+              </svg>
+              <p>{engine}</p>
+            </li>
+            {kitchen > 0 && (
+              <li className={styles.amenity}>
+                <svg width={20} height={20}>
+                  <use href={`${icons}#kitchen`}></use>
+                </svg>
+                <p>Kitchen</p>
+              </li>
+            )}
+            {airConditioner > 0 && (
+              <li className={styles.amenity}>
+                <svg width={20} height={20}>
+                  <use href={`${icons}#airConditioner`}></use>
+                </svg>
+                <p>AC</p>
+              </li>
+            )}
           </ul>
           <button type="button" onClick={openModal}>
             Show more

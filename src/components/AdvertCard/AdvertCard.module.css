@@ -67,8 +67,11 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 24px;
+  max-width: 80%;
 }
 .amenity {
+  display: flex;
+  gap: 8px;
   border-radius: 100px;
   padding: 12px 18px;
   background: #f2f4f7;
